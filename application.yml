@@ -9,3 +9,14 @@ eureka:
 message: Hello from Config Server
 gateway:
   url: http://localhost:8084
+
+security:
+  role-rules:
+    - path: /products/admin/**
+      roles: USER
+
+    - path: /products/**
+      roles: USER,ADMIN
+
+    - path: /orders/**
+      roles: USER,ADMIN
