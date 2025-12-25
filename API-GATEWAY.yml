@@ -1,7 +1,7 @@
 security:
   role-rules:
     - path: /admin/**
-      roles: ADMIN
+      roles: USER
 
     - path: /products/**
       roles: USER,ADMIN
