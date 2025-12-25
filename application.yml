@@ -10,10 +10,7 @@ message: Hello from Config Server
 gateway:
   url: http://localhost:8084
 spring:
-  jpa:
-    properties:
-      hibernate:
-        jdbc:
-          time_zone: UTC
+  jackson:
+    time-zone: Asia/Kolkata
 
 
